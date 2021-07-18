@@ -1,8 +1,7 @@
-#**Sviatlana Mikhailava**#
+# **Sviatlana Mikhailava**
 
 
-##CONTACT##
-
+## CONTACT
 
 *Minsk,
 +375 29 7707250
