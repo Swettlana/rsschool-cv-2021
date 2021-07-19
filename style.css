@@ -1,0 +1,33 @@
+body {
+  border: 2px solid rgb(2, 38, 39);
+  margin: 0 auto;
+  padding: 0;
+  width: 620px;
+  height: 877px;
+  background-color: #ccc;
+}
+.header {
+  display: flex;
+  background-color: cadetblue;
+  height: 250px;
+  padding: 0px 40px 0px 40px;
+  align-items: center;
+}
+.photo {
+  height: 90%;
+  margin-right: 30px;
+  border-radius: 50%;
+}
+
+.main-info {
+  display: flex;
+  flex-direction: column;
+}
+.name {
+  margin: 0;
+  font-size: 46px;
+  color: rgb(35, 57, 58);
+}
+.contact-title {
+  margin-bottom: 10px;
+}
