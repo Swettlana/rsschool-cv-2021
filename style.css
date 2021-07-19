@@ -1,6 +1,8 @@
 body {
   border: 2px solid rgb(2, 38, 39);
   margin: 0 auto;
+  margin-bottom: 5px;
+  margin-top: 5px;
   padding: 0;
   width: 620px;
   height: 877px;
@@ -28,6 +30,7 @@ body {
   font-size: 46px;
   color: rgb(35, 57, 58);
 }
-.contact-title {
-  margin-bottom: 10px;
+.contact {
+  list-style: none;
+  padding: 0;
 }
