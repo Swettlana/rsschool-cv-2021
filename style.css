@@ -1,0 +1,95 @@
+body {
+  position: relative;
+  border: 2px solid rgb(2, 38, 39);
+  margin: 0 auto;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  padding: 0;
+  width: 620px;
+  height: 877px;
+  background-color: #ccc;
+  color: rgb(35, 57, 58);
+}
+h5 {
+  margin: 0;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+p {
+  padding: 0;
+  margin: 0;
+  color: #000;
+}
+a {
+  color: rgb(61, 115, 117);
+
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+.header {
+  display: flex;
+  background-color: cadetblue;
+  height: 250px;
+  padding: 0px 40px 0px 40px;
+  align-items: center;
+}
+.photo {
+  height: 90%;
+  margin-right: 30px;
+  border-radius: 50%;
+}
+
+.main-info {
+  display: flex;
+  flex-direction: column;
+}
+.name {
+  margin: 0;
+  font-size: 46px;
+}
+.contact {
+  list-style: none;
+  padding: 0;
+  color: #000;
+}
+.section {
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding: 10px;
+  width: 90%;
+  background-color: rgb(197, 194, 194);
+}
+.skills {
+  margin: 0;
+  list-style-position: inside;
+  color: #000;
+  display: flex;
+  justify-content: space-between;
+  list-style-image: url("for_skills.svg");
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  background-color: cadetblue;
+  padding: 10px 40px 10px 40px;
+  align-items: center;
+  justify-content: space-between;
+}
+.time {
+  font-size: 22px;
+  color: #ccc;
+}
+#rss {
+  height: 30px;
+}
+#github {
+  height: 30px;
+}
