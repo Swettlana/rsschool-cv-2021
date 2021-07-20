@@ -83,6 +83,10 @@ a:hover {
   align-items: center;
   justify-content: space-between;
 }
+.time {
+  font-size: 22px;
+  color: #ccc;
+}
 #rss {
   height: 30px;
 }
