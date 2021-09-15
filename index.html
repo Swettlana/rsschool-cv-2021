@@ -12,12 +12,11 @@
       <nav class="header__nav">
         <ul class="menu">
           <li><a href="">Contacts</a></li>
-          <li><a href="">About me</a></li>
+          <li><a href="#about-me">About me</a></li>
           <li><a href="">Education</a></li>
           <li><a href="">Skills</a></li>
           <li><a href="">My projects</a></li>
           <li><a href="">My code</a></li>
-          <li><a href=""></a></li>
         </ul>
       </nav>
       <div class="burger">
@@ -30,38 +29,38 @@
         <div class="burger__nav">
           <ul>
             <li><a href="">Contacts</a></li>
-            <li><a href="">About me</a></li>
+            <li><a href="#about-me">About me</a></li>
             <li><a href="">Education</a></li>
             <li><a href="">Skills</a></li>
             <li><a href="">My projects</a></li>
             <li><a href="">My code</a></li>
-            <li><a href=""></a></li>
           </ul>
         </div>
       </div>
     </div>
   </header>
   <main class="main">
-    <div class="main__wrapper">
-      <aside class="aside">
+    <section class="general-info">
+      <div class="general-info__wrapper">
         <img src="for_CV.jpg" alt="Photo" class="photo">
-        <h1>Sviatlana Mikhailava</h1>
-        <address class="contacts">
-          <ul class="contact">
-            <li>Poland, Wrocław</li>
-            <li>phone: +48 573 013 319</li>
-            <li>e-mail:Stellla@tut.by</li>
-        </address>
+        <div class="general-info__info">
+          <h1>Sviatlana Mikhailava</h1>
+          <address class="contacts">
+            <ul class="contact">
+              <li>Poland, Wrocław</li>
+              <li>phone: +48 573 013 319</li>
+              <li>e-mail:Stellla@tut.by</li>
+          </address>
+        </div>
+      </div>
       </aside>
-
       <article>
         <section class="section">
-          <h5>
+          <h5 name="about-me">
             about me
           </h5>
           <p>
-            I am a responsible and hard-working person. RSSchool frontend course.
-            I am currently studying the front-end RSSchool course.
+            I am a responsible and hard-working person. I am currently studying the front-end RSSchool course.
           </p>
         </section>
         <section class="section">
@@ -108,7 +107,7 @@
           <p>English A1</p>
         </section>
       </article>
-    </div>
+      </div>
   </main>
   <footer class="footer">
     <a href="https://rs.school/js/"><img id="rss" src="rss.svg" alt="RSSchool"></a>

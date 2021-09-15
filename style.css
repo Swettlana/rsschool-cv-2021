@@ -35,7 +35,7 @@ a:hover {
   margin: 0 auto;
   max-width: 80vw;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   height: 100%;
 }
 .header__nav {
@@ -50,9 +50,11 @@ a:hover {
 .menu > li::before {
   content: "";
   display: block;
-  margin-right: 2px;
-  width: 8px;
+  margin-right: 4px;
+  width: 5px;
   height: 16px;
+  transform: rotate(25deg);
+  border-radius: 3px;
   background-color: #e6ce78;
 }
 .burger {
@@ -139,23 +141,28 @@ a:hover {
   width: 100%;
   height: 100%;
 }
-.main__wrapper {
+/*.main__wrapper {
   display: flex;
   height: 100vh;
   width: 80vw;
-  margin: 0 auto;
-}
-.aside {
-  display: flex;
+  margin: 0 auto;*/
+/*}*/
+.general-info {
+  width: 100%;
   background-color: cadetblue;
-  flex-direction: column;
-  width: 25%;
-  height: 100vh;
+}
+.general-info__wrapper {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  column-gap: 10%;
   align-items: center;
 }
 .photo {
-  max-width: 50%;
+  max-width: 20%;
   border-radius: 50%;
+  margin-top: 1%;
+  margin-bottom: 1%;
 }
 
 .main-info {
