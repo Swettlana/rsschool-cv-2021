@@ -11,10 +11,10 @@
     <div class="header__wrapper">
       <nav class="header__nav">
         <ul class="header__menu">
-          <li><a href="" class="header__menu_item">Contacts</a></li>
+          <li><a href="#contacts-info" class="header__menu_item">Contacts</a></li>
           <li><a href="#about-me" class="header__menu_item">About me</a></li>
-          <li><a href="" class="header__menu_item">Education</a></li>
-          <li><a href="" class="header__menu_item">Skills</a></li>
+          <li><a href="#education" class="header__menu_item">Education</a></li>
+          <li><a href="#skills " class="header__menu_item">Skills</a></li>
           <li><a href="" class="header__menu_item">My projects</a></li>
           <li><a href="" class="header__menu_item">My code</a></li>
         </ul>
@@ -28,10 +28,10 @@
         </label>
         <div class="burger__nav">
           <ul>
-            <li><a href="" class="burger__nav_item">Contacts</a></li>
+            <li><a href="#contacts-info" class="burger__nav_item">Contacts</a></li>
             <li><a href="#about-me" class="burger__nav_item">About me</a></li>
-            <li><a href="" class="burger__nav_item">Education</a></li>
-            <li><a href="" class="burger__nav_item">Skills</a></li>
+            <li><a href="#education" class="burger__nav_item">Education</a></li>
+            <li><a href="#skills" class="burger__nav_item">Skills</a></li>
             <li><a href="" class="burger__nav_item">My projects</a></li>
             <li><a href="" class="burger__nav_item">My code</a></li>
           </ul>
@@ -47,69 +47,78 @@
         </figure>
         <div class="general-info__info">
           <h1>Sviatlana Mikhailava</h1>
-          <address class="contacts">
-            <ul class="contact">
-              <li>Poland, Wrocław</li>
-              <li>phone: +48 573 013 319</li>
-              <li>e-mail:Stellla@tut.by</li>
+          <h2>Junior Front-end Developer </h2>
+          <address class="contacts" id="contacts-info">
+            <ul>
+              <li class="place">Poland, Wrocław</li>
+              <li class="phone-number">phone: +48 573 013 319</li>
+              <li class="email-img"><a href="mailto:stellla@tut.by" class="e-mail">e-mail: stellla@tut.by</a>
+              </li>
           </address>
         </div>
-      </div>
-      </aside>
-      <article>
-        <section class="section">
-          <h5 name="about-me">
+    </section>
+    <article class="all-info">
+      <section id="about-me" class="about-me">
+        <div class="about-me__text">
+          <h5>
             about me
           </h5>
           <p>
-            I am a responsible and hard-working person. I am currently studying the front-end RSSchool course.
+            I am a responsible and hard-working person. I am currently studying the front-end RSSchool course. And...
           </p>
-        </section>
-        <section class="section">
-          <h5>
-            education
-          </h5>
-          <p>
-            Engineer<br>
-            Belarusian National Technical University, Republic of Belarus, Minsk<br>
-            Completion: 2008
-          </p>
-        </section>
-        <section class="section">
-          <h5>
-            skills
-          </h5>
-          <ul class="skills">
-            <li>HTML</li>
-            <li>Git</li>
-            <li>CSS</li>
-            <li>JavaScript </li>
-            <li>TypeScript</li>
-            <li>React</li>
-          </ul>
-        </section>
-        <section class="section">
-          <h5>
-            my projects
-          </h5>
-          <a href="https://rolling-scopes-school.github.io/swettlana-JSFE2021Q1/online-zoo/pages/landing/index.html">Website
-            ZOO</a><br>
-          <a href="https://rolling-scopes-school.github.io/swettlana-JSFE2021Q1/match-match-game/">Game</a>
-        </section>
-        <section class="section">
-          <h5>
-            experience
-          </h5>
-          <p>Studies projects</p>
-        </section>
-        <section class="section">
-          <h5>
-            languages
-          </h5>
-          <p>English A1</p>
-        </section>
-      </article>
-      </div>
+        </div>
+        <iframe src="https://www.youtube.com/embed/R5WnB474kJs" title="About me" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </section>
+      <section class="education" id="education">
+        <h5>
+          education
+        </h5>
+        <p>
+          Belarusian National Technical University, Republic of Belarus, Minsk<br>
+          Completion: 2008
+        </p>
+        <p>
+          On-line corses "HTML for beginners" and "CSS for beginners"<br>
+          Completion: 2021
+        </p>
+      </section>
+      <section id="skills">
+        <h5>
+          skills
+        </h5>
+        <ul class="skills">
+          <li>HTML</li>
+          <li>Git</li>
+          <li>CSS</li>
+          <li>JavaScript </li>
+          <li>TypeScript</li>
+          <li>React</li>
+        </ul>
+      </section>
+      <section class="section">
+        <h5>
+          my projects
+        </h5>
+        <a href="https://rolling-scopes-school.github.io/swettlana-JSFE2021Q1/online-zoo/pages/landing/index.html">Website
+          ZOO</a><br>
+        <a href="https://rolling-scopes-school.github.io/swettlana-JSFE2021Q1/match-match-game/">Game</a>
+      </section>
+      <section class="section">
+        <h5>
+          experience
+        </h5>
+        <p>Studies projects</p>
+      </section>
+      <section class="section">
+        <h5>
+          languages
+        </h5>
+        <p>English A1</p>
+      </section>
+    </article>
+    </div>
   </main>
   <footer class="footer">
     <a href="https://rs.school/js/"><img id="rss" src="rss.svg" alt="RSSchool"></a>
