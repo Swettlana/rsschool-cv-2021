@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Curriculum vitae</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/styles/shades-of-purple.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
 </head>
 <body>
   <header class="header">
@@ -16,7 +20,7 @@
           <li><a href="#education" class="header__menu_item">Education</a></li>
           <li><a href="#skills " class="header__menu_item">Skills</a></li>
           <li><a href="#my-project" class="header__menu_item">My projects</a></li>
-          <li><a href="" class="header__menu_item">My code</a></li>
+          <li><a href="#languages" class="header__menu_item">Languages</a></li>
         </ul>
       </nav>
       <div class="burger">
@@ -33,7 +37,7 @@
             <li><a href="#education" class="burger__nav_item">Education</a></li>
             <li><a href="#skills" class="burger__nav_item">Skills</a></li>
             <li><a href="#my-project" class="burger__nav_item">My projects</a></li>
-            <li><a href="" class="burger__nav_item">My code</a></li>
+            <li><a href="#languages" class="burger__nav_item">Languages</a></li>
           </ul>
         </div>
       </div>
@@ -129,30 +133,32 @@
               href="https://rolling-scopes-school.github.io/swettlana-JSFE2021Q1/match-match-game/"></a>
             <p>Memory game. Is to find paired cards <br>
               Used technologies: HTML, CSS, TS, Webpack</p>
-
           </div>
         </div>
-        <div class="my-code"></div>
+        <div class="my-code">
+          <pre><code class="javascript">
+            function divCon(x){
+            let sumInt=sumStr=0;
+            x.forEach((elem)=>{
+              (typeof elem==="string")? sumStr+=(+elem):sumInt+=elem;
+            });
+            return sumInt-sumStr;
+          }
+        </code></pre>
+        </div>
       </section>
-      <section class="section">
-        <h5>
-          experience
-        </h5>
-        <p>Studies projects</p>
-      </section>
-      <section class="section">
+      <section id="languages">
         <h5>
           languages
         </h5>
         <p>English A1</p>
       </section>
     </article>
-    </div>
   </main>
   <footer class="footer">
-    <a href="https://rs.school/js/"><img id="rss" src="rss.svg" alt="RSSchool"></a>
-    <time class="time" datetime="2021-08"> August 2021</time>
-    <a href="https://github.com/Swettlana"><img id="github" src="github.svg" alt="Github"></a>
+    <a target="_blanc" href="https://rs.school/js/"><img id="rss" src="rss.svg" alt="RSSchool"></a>
+    <time class="time" datetime="2021-09"> September, 2021</time>
+    <a target="_blanc" href="https://github.com/Swettlana"><img id="github" src="github.svg" alt="Github"></a>
   </footer>
 </body>
 </html>
