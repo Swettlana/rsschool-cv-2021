@@ -419,6 +419,9 @@ iframe {
   html {
     font-size: 0.8px;
   }
+  iframe {
+    width: 50%;
+  }
   .general-info__wrapper {
     width: 100%;
     margin: 0 auto;
@@ -516,5 +519,8 @@ iframe {
   }
   .my-code {
     font-size: 10rem;
+  }
+  iframe {
+    width: 100%;
   }
 }
