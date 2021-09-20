@@ -126,8 +126,8 @@ section {
   display: none;
 }
 .burger__btn {
-  height: 30px;
-  width: 30px;
+  height: 28rem;
+  width: 28rem;
   display: flex;
   background-color: var(--light);
   border-radius: 50%;
@@ -158,12 +158,12 @@ section {
   top: 65%;
 }
 .burger__nav {
-  width: 35vw;
+  width: 40%;
   padding: 7px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: var(--dark-gray);
+  background-color: var(--dark);
   position: absolute;
   top: 0;
   right: 0;
@@ -172,6 +172,7 @@ section {
   box-shadow: -4px 4px 5px #ccc;
 }
 .burger__nav_item {
+  font-size: 26rem;
   color: var(--blue);
   text-decoration: none;
 }
@@ -367,7 +368,7 @@ iframe {
 .my-code {
   font-size: 16px;
   margin: 0 auto;
-  width: 50%;
+  width: 90%;
   padding-top: 2%;
 }
 .footer__wrapper {
@@ -408,18 +409,22 @@ iframe {
     max-width: 90vw;
   }
   .general-info__wrapper {
-    max-width: 90%;
+    width: 90%;
   }
   section {
-    max-width: 90%;
+    width: 90%;
   }
 }
-@media (max-width: 768px) {
-  .header__menu_item {
-    font-size: 12px;
+@media (max-width: 770px) {
+  html {
+    font-size: 0.8px;
   }
-}
-@media (max-width: 520px) {
+  .general-info__wrapper {
+    width: 100%;
+    margin: 0 auto;
+    flex-basis: 0;
+    flex-grow: 1;
+  }
   .header {
     height: 30px;
   }
@@ -432,6 +437,84 @@ iframe {
   .header__nav {
     display: none;
   }
+  .my-code {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 12px;
+  }
+  .my-photo {
+    max-width: 35%;
+    margin: 0;
+  }
+  .photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-bottom-right-radius: 10%;
+    border-top-left-radius: 20%;
+  }
 }
-@media (max-width: 320px) {
+@media (max-width: 520px) {
+  html {
+    font-size: 0.8px;
+  }
+  section {
+    width: 100%;
+  }
+  .general-info__wrapper {
+    flex-direction: column;
+  }
+  .my-code {
+    font-size: 10px;
+  }
+}
+@media (max-width: 400px) {
+  h1 {
+    font-size: 30rem;
+    margin: 0;
+  }
+  h2 {
+    font-size: 22rem;
+    margin: 0;
+  }
+
+  .contacts > ul > li {
+    padding-left: 10%;
+  }
+
+  .phone-number {
+    background-size: 6%;
+  }
+  .all-info {
+    padding: 0.1%;
+  }
+  #about-me {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .projects__wrapper {
+    flex-direction: column;
+  }
+  .time {
+    font-size: 22rem;
+  }
+  #rss {
+    height: 22rem;
+  }
+  #github {
+    height: 22rem;
+  }
+  .skills {
+    font-size: 16rem;
+    margin-left: 3%;
+    margin-top: 1%;
+  }
+  .skills-img {
+    width: 30rem;
+    height: 30rem;
+  }
+  .my-code {
+    font-size: 10rem;
+  }
 }
