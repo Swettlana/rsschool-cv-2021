@@ -5,78 +5,165 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Curriculum vitae</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/styles/shades-of-purple.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
 </head>
 <body>
   <header class="header">
-    <img src="for_CV.jpg" alt="Photo" class="photo">
-    <section class="main-info">
-      <h1 class="name"> Sviatlana Mikhailava </h1>
-      <address>
-        <ul class="contact">
-          <li>Poland, Wrocław</li>
-          <li>phone: +48 573 013 319</li>
-          <li>e-mail: Stellla@tut.by</li>
+    <div class="header__wrapper">
+      <nav class="header__nav">
+        <ul class="header__menu">
+          <li><a href="#contacts-info" class="header__menu_item">Contacts</a></li>
+          <li><a href="#about-me" class="header__menu_item">About me</a></li>
+          <li><a href="#education" class="header__menu_item">Education</a></li>
+          <li><a href="#skills " class="header__menu_item">Skills</a></li>
+          <li><a href="#my-project" class="header__menu_item">My projects</a></li>
+          <li><a href="#languages" class="header__menu_item">Languages</a></li>
         </ul>
-      </address>
-    </section>
+      </nav>
+      <div class="burger">
+        <input type="checkbox" id="burger__input">
+        <label for="burger__input" class="burger__btn">
+          <span class="burger__line burger__line-first"></span>
+          <span class="burger__line burger__line-second"></span>
+          <span class="burger__line burger__line-third"></span>
+        </label>
+        <div class="burger__nav">
+          <ul>
+            <li><a href="#contacts-info" class="burger__nav_item">Contacts</a></li>
+            <li><a href="#about-me" class="burger__nav_item">About me</a></li>
+            <li><a href="#education" class="burger__nav_item">Education</a></li>
+            <li><a href="#skills" class="burger__nav_item">Skills</a></li>
+            <li><a href="#my-project" class="burger__nav_item">My projects</a></li>
+            <li><a href="#languages" class="burger__nav_item">Languages</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </header>
-  <main>
-    <section class="section">
-      <h5>
-        about me
-      </h5>
-      <p>
-        I am a responsible and hard-working person. RSSchool frontend course.
-        I am currently studying the front-end RSSchool course.
-      </p>
+  <main class="main">
+    <section class="general-info">
+      <div class="general-info__wrapper">
+        <figure class="my-photo">
+          <img src="./Assets/image/for_CV.jpg" alt="Photo" class="photo">
+        </figure>
+        <div class="general-info__info">
+          <h1>Sviatlana Mikhailava</h1>
+          <h2>Junior Front-end Developer </h2>
+          <address class="contacts" id="contacts-info">
+            <ul>
+              <li class="place">Poland, Wrocław</li>
+              <li class="phone-number">phone: +48 573 013 319</li>
+              <li class="email-img"><a href="mailto:stellla@tut.by" class="e-mail">e-mail: stellla@tut.by</a>
+              </li>
+          </address>
+        </div>
     </section>
-    <section class="section">
-      <h5>
-        education
-      </h5>
-      <p>
-        Engineer<br>
-        Belarusian National Technical University, Republic of Belarus, Minsk<br>
-        Completion: 2008
-      </p>
-    </section>
-    <section class="section">
-      <h5>
-        skills
-      </h5>
-      <ul class="skills">
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript </li>
-        <li>TypeScript</li>
-        <li>React</li>
-      </ul>
-    </section>
-    <section class="section">
-      <h5>
-        my projects
-      </h5>
-      <a href="https://rolling-scopes-school.github.io/swettlana-JSFE2021Q1/online-zoo/pages/landing/index.html">Website
-        ZOO</a><br>
-      <a href="https://rolling-scopes-school.github.io/swettlana-JSFE2021Q1/match-match-game/">Game</a>
-    </section>
-    <section class="section">
-      <h5>
-        experience
-      </h5>
-      <p>Studies projects</p>
-    </section>
-    <section class="section">
-      <h5>
-        languages
-      </h5>
-      <p>English A1</p>
-    </section>
+    <article class="all-info">
+      <section id="about-me" class="about-me">
+        <div class="about-me__text">
+          <h5>
+            about me
+          </h5>
+          <p>
+            I am a responsible and hard-working person. I am currently studying the front-end RSSchool course. And...
+          </p>
+        </div>
+        <iframe src="https://www.youtube.com/embed/R5WnB474kJs" title="About me" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </section>
+      <section class="education" id="education">
+        <h5>
+          education
+        </h5>
+        <p>
+          Belarusian National Technical University, Republic of Belarus, Minsk<br>
+          Completion: 2008
+        </p>
+        <p>
+          On-line corses "HTML for beginners" and "CSS for beginners"<br>
+          Completion: 2021
+        </p>
+      </section>
+      <section id="skills">
+        <h5>
+          skills
+        </h5>
+        <ul class="skills">
+          <li>
+            <div class="skills-img html"></div>
+            HTML
+          </li>
+          <li>
+            <div class="skills-img css"></div>
+            CSS
+          </li>
+          <li>
+            <div class="skills-img js"></div>
+            JavaScript
+          </li>
+          <li>
+            <div class="skills-img ts"></div>
+            TypeScript
+          </li>
+          <li>
+            <div class="skills-img git"></div>
+            Git
+          </li>
+        </ul>
+      </section>
+      <section id="my-project">
+        <h5>
+          my projects and sample code
+        </h5>
+        <div class="projects__wrapper">
+          <div class="project">
+            <h4>Web-site On-line Zoo</h4>
+            <a target="_blanc" class="project__img-zoo"
+              href="https://rolling-scopes-school.github.io/swettlana-JSFE2021Q1/online-zoo/pages/landing/index.html"></a>
+            <p>Zoo website that allows you to observe animals in real time <br>
+              Used technologies: HTML, CSS, JS </p>
+          </div>
+          <div class="project">
+            <h4>Game "Match-match"</h4>
+            <a target="_blanc" class="project__img-game"
+              href="https://rolling-scopes-school.github.io/swettlana-JSFE2021Q1/match-match-game/"></a>
+            <p>Memory game. Is to find paired cards <br>
+              Used technologies: HTML, CSS, TS, Webpack</p>
+          </div>
+        </div>
+        <div class="my-code">
+          <h4>Sample code</h4>
+          <pre><code class="javascript">
+            function divCon(x){
+            let sumInt=sumStr=0;
+            x.forEach((elem)=>{
+              (typeof elem==="string")? sumStr+=(+elem):sumInt+=elem;
+            });
+            return sumInt-sumStr;
+          }
+        </code></pre>
+        </div>
+      </section>
+      <section id="languages">
+        <h5>
+          languages
+        </h5>
+        <p>English A1</p>
+      </section>
+    </article>
   </main>
-  <footer class="footer">
-    <a href="https://rs.school/js/"><img id="rss" src="rss.svg" alt="RSSchool"></a>
-    <time class="time" datetime="2021-08"> August 2021</time>
-    <a href="https://github.com/Swettlana"><img id="github" src="github.svg" alt="Github"></a>
-  </footer>
+  <div class="footer__wrapper">
+    <footer class="footer">
+      <a target="_blanc" href="https://rs.school/js/"><img id="rss" src="./Assets/svg/rss.svg" alt="RSSchool"></a>
+      <time class="time" datetime="2021-09"> September, 2021</time>
+      <a target="_blanc" href="https://github.com/Swettlana"><img id="github" src="./Assets/svg/github.svg"
+          alt="Github"></a>
+    </footer>
+  </div>
+  <script src="cv.js"></script>
 </body>
 </html>
